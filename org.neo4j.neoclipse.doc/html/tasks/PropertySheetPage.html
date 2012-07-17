@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Using Neo4j property sheet</title>
+<link rel="stylesheet" type="text/css" href="../../styles/doc.css" />
+</head>
+
+<body>
+
+<div id="content">
+
+<h1>Using Neo4j property sheet</h1>
+
+<p>Properties are <em>key/value pairs</em> that can be set on <em>both
+nodes and relationships</em>. You can use the property sheet to:</p>
+
+<ul>
+	<li><a href="#inspect">inspect properties</a></li>
+	<li><a href="#edit">edit property values</a></li>
+	<li><a href="#remove">remove a property</a></li>
+	<li><a href="#create">create new properties</a></li>
+	<li><a href="#rename">rename property keys</a></li>
+</ul>
+
+<h2>Basic usage</h2>
+
+<p>Neo4j Graph view integrates with the property view of the Eclipse
+IDE. There are two ways to make the property sheet show up:</p>
+
+<ul>
+	<li>The Neo4j Property sheet opens as part of the Neo4j
+	perspective, which is found in the menu through: Window -&gt; Open
+	Perspective -&gt; Neo4j</li>
+	<li>You can open it independently from the menu: Window -&gt; Show
+	View -&gt; General -&gt; Properties</li>
+</ul>
+
+<p><strong>Note: </strong><em>IDs and relationship types can
+not be altered</em> (by Neo4j design).</p>
+
+<h2 id="inspect">Inspect properties</h2>
+
+<p>When you select a node or relationship in the Neo4j Graph view,
+the properties view will show the keys and values of all properties.</p>
+
+<h2 id="edit">Edit property values</h2>
+
+<p>Property values can be altered by editing the text representation
+of the value (just click into them). Standard Java <code>parse[Type]()</code>
+methods are used to parse the input.</p>
+
+<p>There's also different ways to use <em>copy &amp; paste:</em></p>
+
+<ul>
+	<li>Copy &amp; paste text in the value editor works just the usual
+	way.</li>
+	<li><img
+		src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/enabled/copy.gif">
+	Copy &amp; <img
+		src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/enabled/paste.gif">
+	paste using the context menu will copy the key name and the value in a
+	typesafe way.</li>
+</ul>
+
+
+<h2 id="remove">Remove a property</h2>
+
+<p>Right-click on the property key and choose the <strong>Remove</strong>
+(<img src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/enabled/delete.gif">)
+action from the context menu.</p>
+
+<h2 id="create">Create new properties</h2>
+
+<p>By right-clicking the property sheet you get access to the "New"
+and "New[]" (both <img
+	src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/enabled/new.gif">
+icon) menu alternatives. This is while Neo4j properties can be either
+single-valued or contain an array of values. Selecting one of the
+alternatives will bring up a list of types to choose from:</p>
+<ul>
+	<li><img
+		src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/types/type-string.gif">
+	String</li>
+	<li><img
+		src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/types/type-char.gif">
+	char</li>
+	<li><img
+		src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/types/type-long.gif">
+	long</li>
+	<li><img
+		src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/types/type-int.gif">
+	int</li>
+	<li><img
+		src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/types/type-short.gif">
+	short</li>
+	<li><img
+		src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/types/type-byte.gif">
+	byte</li>
+	<li><img
+		src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/types/type-double.gif">
+	double</li>
+	<li><img
+		src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/types/type-float.gif">
+	float</li>
+	<li><img
+		src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/types/type-boolean.gif">
+	boolean</li>
+</ul>
+
+<p>After choosing type you will be prompted for the key name and the
+value.</p>
+
+<h2 id="rename">Rename property keys</h2>
+
+<p>As a convenience function, you can also rename a property key.
+Right-click the property key and choose the <strong>Rename</strong> (<img
+	src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/enabled/rename.gif">)
+button from the context menu. Neoclipse will prompt you for the new key
+name.</p>
+
+
+</div>
+
+</body>
+</html>

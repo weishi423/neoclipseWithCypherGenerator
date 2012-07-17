@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class>
+	<name>Movie</name>
+	<package>com.nrk</package>
+	<type>Node</type>
+	
+	<instancevariables>
+		<properties>
+			<property name="name" type="String"/>
+			<property name="age" type="int"/>
+			<property name="empcode" type="Long"/>
+			<property name="email" type="String"/>
+			<property name="salary" type="Double"/>
+			<property name="yearsOfExperience" type="Float"/>
+			<property name="married" type="Boolean"/>
+			<property name="password" type="char[]"/>
+			<relations>
+			    <relationsship type="Directed" direction="INCOMMING">
+					<node name="director" type="Person"/>
+				</relationsship>
+				
+			</relations>
+		</properties>
+		
+		
+	</instancevariables>
+</class>

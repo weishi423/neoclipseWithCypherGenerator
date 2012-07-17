@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Using Neo4j Graph view</title>
+<link rel="stylesheet" type="text/css" href="../../styles/doc.css" />
+</head>
+
+<body>
+
+<div id="content">
+
+<h1>Using Database graph view</h1>
+
+<h2>Basic usage</h2>
+
+<p>This view traverses the node space from a starting point and to
+the specified depth. By using the Relationship types view you can also
+set the traversal to follow only specified relationship types and
+directions.</p>
+
+<p>The starting point of the traversal is distinguished by a blue
+label color. In this example the reference node is the starting point of
+the traversal:</p>
+
+<p><img src="graph-view-root.png"></p>
+
+<h3>Navigation</h3>
+
+<p>To change the traversal starting point, double click a node.</p>
+
+<p>To change the Traversal depth, use the <strong>Increase
+traversal depth</strong> button (<img
+	src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/enabled/plus.gif">)
+and <strong>Decrease traversal depth</strong> button (<img
+	src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/enabled/minus.gif">).</p>
+
+<p>The <strong>Show reference node</strong> button (<img
+	src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/enabled/home.gif">)
+brings the view back to traversing from the reference node.</p>
+
+<p>The <strong>Refresh</strong> button (<img
+	src="PLUGINS_ROOT/org.neo4j.neoclipse/icons/enabled/refresh.gif">)
+refreshes the layout.</p>
+
+<h2>View menu</h2>
+
+<p>In the view menu you can select the layout to use with some extra
+alternatives compared to the toolbar. You can also toggle what
+information will show up in the graph:</p>
+
+<img alt="view menu" src="view-menu.png">
+
+<p>For relationships, the type can be included as well as a label
+derived from the properties of the relationship. See the <a
+	href="../reference/preferences.html">preferences section</a> for
+further information.</p>
+
+</div>
+
+</body>
+</html>
